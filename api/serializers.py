@@ -1,10 +1,10 @@
 from rest_framework.serializers import ModelSerializer
 
-from .models import Product
+from .models import Post
 
-class ProductSerializers(ModelSerializer):
+class PostSerializers(ModelSerializer):
     class Meta:
-        model = Product
-        fields = ["id", "name", "price", "descriptions", "created_at",]
+        model = Post
+        fields = ["id", "title", "comment", "likes", "created_at",]
         read_only_fields=["id", "created_at"]
 
