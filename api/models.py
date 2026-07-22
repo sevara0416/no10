@@ -7,7 +7,7 @@ class Post(models.Model):
     likes=models.IntegerField(default=0)
     author=models.CharField(max_length=100)
     # tag=models.
-    created_at=models.TimeField(auto_now_add=True)
+    created_at=models.DateTimeField(auto_now_add=True)
     created_date=models.DateField(auto_now_add=True)
     updated_at=models.TimeField(auto_now=True)
 
